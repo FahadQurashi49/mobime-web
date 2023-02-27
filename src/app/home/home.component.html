@@ -1,0 +1,24 @@
+<div class="flex-container">
+    <form action="" class="position-relative">
+        <mat-form-field class="flex-item" appearance="fill" >
+            <mat-label>City</mat-label>
+            <mat-select [(ngModel)]="selectedCity" name="city">
+                <mat-option *ngFor="let city of cities" [value]="city">
+                    {{city}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field class="flex-item">
+            <mat-label>Search</mat-label>
+            <input matInput [(ngModel)]="searchTitle" name="titleSearch" [disabled]="!selectedCity" />
+        </mat-form-field>
+
+        <button (click)="navigateToSearch()" [disabled]="!searchTitle" class="flex-item top-0 height-56 margin-left-4" type="button" mat-raised-button color="primary" aria-label="Search">
+            <mat-icon class="icon-size-large position-relative">search</mat-icon>
+        </button>
+
+    </form>
+    <br/>
+    <p>selected city: {{!selectedCity}}</p>
+    <p>search text: {{searchTitle}}</p>
+</div>
