@@ -1,1 +1,5 @@
-<h2>Ad search results</h2>
+<mat-grid-list cols="4" rowHeight="1:1">
+    <mat-grid-tile *ngFor="let mobAd of mobileAds">
+        <app-ad-search-grid-item [mobileAd]="mobAd"></app-ad-search-grid-item>
+    </mat-grid-tile>
+</mat-grid-list>

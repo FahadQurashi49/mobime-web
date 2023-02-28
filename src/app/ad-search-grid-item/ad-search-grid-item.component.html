@@ -1,0 +1,14 @@
+<mat-card class="card">
+    <mat-card-header>
+        <div mat-card-avatar><mat-icon>person</mat-icon></div>
+        <h3>{{ mobileAd?.user?.name }}</h3>
+    </mat-card-header>
+    <div class="flex-container">
+        <img mat-card-image class="header-image" src={{adPhoto?.url}} alt={{mobileAd?.title}}>
+    </div>
+    <mat-card-content>
+        <mat-card-title>{{ mobileAd?.title }}</mat-card-title>
+        <mat-card-subtitle class="text-ellipsis" title="{{mobileAd?.description}}">{{ mobileAd?.description }}</mat-card-subtitle>
+        <p>{{ mobileAd?.price }}</p>
+    </mat-card-content>
+</mat-card>

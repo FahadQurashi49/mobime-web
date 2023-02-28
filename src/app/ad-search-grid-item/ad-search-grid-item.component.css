@@ -1,0 +1,15 @@
+.card {
+  max-width: 400px;
+}
+
+.header-image {
+  background-size: cover;
+  max-width: 200px;
+}
+
+.text-ellipsis {
+  white-space: nowrap; 
+  width: 220px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
