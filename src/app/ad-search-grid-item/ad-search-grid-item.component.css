@@ -1,10 +1,12 @@
 .card {
   max-width: 400px;
+  height: 310px;
 }
 
 .header-image {
   background-size: cover;
   max-width: 200px;
+  max-height: 150px;
 }
 
 .text-ellipsis {

@@ -8,3 +8,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     justify-content: center;
     height: 100%;
 }
+.main-content {
+    margin: 25px;
+}

@@ -14,13 +14,15 @@ import { AdSearchService } from '../services/ad-search.service';
 export class AdSearchComponent {
 
   mobileAds?: MobileAd[] | undefined;
+  searchTitle: string = '';
 
   constructor(private activatedRoute: ActivatedRoute, 
     private adSearchService: AdSearchService) { }
 
   ngOnInit(): void {
     this.activatedRoute.queryParams.subscribe(async (params: Params) => {
-      this.mobileAds = await this.adSearchService.getAdsByTitleAndCity(params['title'], '');
+      this.searchTitle = params['title'];
+      this.mobileAds = await this.adSearchService.getAdsByTitleAndCity(this.searchTitle, '');
     });
   
   }
