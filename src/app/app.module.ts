@@ -18,12 +18,14 @@ import { AppComponent } from './app.component';
 import { AdSearchComponent } from './ad-search/ad-search.component';
 import { HomeComponent } from './home/home.component';
 import { AdSearchGridItemComponent } from './ad-search-grid-item/ad-search-grid-item.component';
+import { MobileAdComponent } from './mobile-ad/mobile-ad.component';
 
 
 const appRoute: Routes = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'search', component: AdSearchComponent},
+  {path: 'mobile_ad', component: MobileAdComponent}
 ];
 
 @NgModule({
@@ -31,7 +33,8 @@ const appRoute: Routes = [
     AppComponent,
     AdSearchComponent,
     HomeComponent,
-    AdSearchGridItemComponent
+    AdSearchGridItemComponent,
+    MobileAdComponent
   ],
   imports: [
     BrowserModule,
