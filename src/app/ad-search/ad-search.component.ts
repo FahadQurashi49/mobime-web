@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { BehaviorSubject } from 'rxjs';
-import { AdPhoto } from '../models/ad-photo';
 import { MobileAd } from '../models/mobile-ad';
 import { AdSearchService } from '../services/ad-search.service';
 

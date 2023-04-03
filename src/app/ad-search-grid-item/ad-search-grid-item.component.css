@@ -1,6 +1,7 @@
 .card {
   max-width: 400px;
   height: 310px;
+  cursor: pointer;
 }
 
 .header-image {

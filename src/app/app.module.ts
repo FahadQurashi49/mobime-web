@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSelectModule } from '@angular/material/select';
@@ -25,7 +26,7 @@ const appRoute: Routes = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'search', component: AdSearchComponent},
-  {path: 'mobile_ad', component: MobileAdComponent}
+  {path: 'mobile_ad/:id', component: MobileAdComponent}
 ];
 
 @NgModule({
@@ -49,7 +50,8 @@ const appRoute: Routes = [
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
